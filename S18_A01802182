@@ -1,0 +1,77 @@
+# Exercise 1
+temperatures = [22, 24, 21, 55, 25, 20, 40]
+
+average = sum(temperatures) / len(temperatures)
+print("Average temperature:", average)
+
+for day in range(len(temperatures)):
+    temp = temperatures[day]
+    if temp > average:
+        print("Day", day + 1, "is above average.")
+    elif temp < average:
+        print("Day", day + 1, "is below average.")
+    else:
+        print("Day", day + 1, "is average.")
+
+print("\n")
+
+
+# Exercise 2
+names = ["Almanza", "Manu", "Analu", "Pau"]
+grades = [85, 10, 40, 95]
+
+for i in range(len(names)):
+    print(names[i], "got", grades[i])
+    if grades[i] >= 50:
+        print(names[i], "passed")
+    else:
+        print(names[i], "failed")
+
+average = sum(grades) / len(grades)
+print("Average grade is", average)
+
+print("\n")
+
+
+# Exercise 3
+items = ["Milk", "Bread", "Eggs"]
+
+for item in items:
+    answer = input("Did you buy " + item + "? (yes or no): ")
+    if answer.lower() == "yes":
+        print(item, "is bought.")
+    else:
+        print(item, "has not been purchased yet.")
+
+print("\n")
+
+
+# Exercise 4
+print("Exercise 4: Numbers")
+
+numbers = [5, 3, 8]
+numbers.sort()
+print("Numbers in order:", numbers[0], numbers[1], numbers[2])
+
+print("\n")
+
+# Exercise 5
+print("Exercise 5: Even or Odd Numbers")
+
+numbers = [2, 7, 10, 13, 20]
+
+for n in numbers:
+    if n % 2 == 0:
+        print(n, "is even.")
+    else:
+        print(n, "is odd.")
+
+print("\n")
+# Exercise 6
+users = ["Souza", "Pau", "Emilio"]
+new_user = input("Enter a new username: ")
+
+if new_user in users:
+    print("That name is already taken. Try a different one.")
+else:
+    print("Username is available! You can use it.")
